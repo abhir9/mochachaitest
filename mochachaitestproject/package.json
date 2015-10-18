@@ -1,0 +1,26 @@
+{
+  "name": "testnode1",
+  "version": "1.0.0",
+  "description": "testnode1",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha && mocha test --require blanket --reporter html-cov >coverage.html"
+  },
+  "author": "abhi",
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "blanket": "^1.1.7",
+    "chai": "^3.3.0"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "index.js"
+      ],
+      "data-cover-never": "node_modules"
+    }
+  },
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}
